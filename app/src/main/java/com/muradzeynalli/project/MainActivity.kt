@@ -77,10 +77,46 @@ fun button(view : View) {
         println("Index 3 : ${ornekDizi.get(3)}")
         val benimSet = setOf<Int>(5,6,7,7,8)
             println(benimSet.size)
+             // For each - Her biri icin
+         benimSet.forEach {
+             println(it)
+         }
+        val digerSet = hashSetOf<String>()
+        digerSet.add("Murad")
+        digerSet.add("Murad")
+        digerSet.forEach {
+            println(it)
+        }
+           //Map
+        println("-------Map--------")
+        //Anahtar Kelime eslestirilmesi (Key-Value Pairing)
+        val yemekDizisi= arrayOf("alma","et","toyuq")
+        val kaloriDizisi = arrayOf(100,300,200)
+       println("${yemekDizisi.get(0)}nin kalorisi:${kaloriDizisi.get(0)}")
+val yemekKalorimap = hashMapOf<String, Int> ()
+        yemekKalorimap.put("et",300)
+        yemekKalorimap.put("alma",100)
+        yemekKalorimap.put("toyuq",200)
+        println(yemekKalorimap.get("et"))
+        val yeniBirDizi = hashMapOf<String, Int>("deyer" to 40)   // hashMapOf -da "to" ist olunur
 
-
+      //Matematiksel Islemler
+        println("-------Matematiksel islemler --------")
+        var sayi = 10
+        sayi ++
+        
+        println(sayi)
+        var digerSayi = 100
+  // && - ve , || -ve ya
+        println(sayi<digerSayi && 2>3)
+        println(sayi < digerSayi || 2>3)
+        // Remainder Qalani tapmaq Qaliq
+        println(10%3)
+        println(20/6)
+        println(20%6)
 
 
 }
+
 }
 
