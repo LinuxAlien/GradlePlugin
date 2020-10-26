@@ -98,7 +98,7 @@ val yemekKalorimap = hashMapOf<String, Int> ()
         yemekKalorimap.put("alma",100)
         yemekKalorimap.put("toyuq",200)
         println(yemekKalorimap.get("et"))
-        val yeniBirDizi = hashMapOf<String, Int>("deyer" to 40)   // hashMapOf -da "to" ist olunur
+        val yeniBirDizi = hashMapOf<String, Int>("deyer" to 40)   // hashMapOf () icine yazmaq isteyende  "to" ist olunur
 
       //Matematiksel Islemler
         println("-------Matematiksel islemler --------")
@@ -115,8 +115,64 @@ val yemekKalorimap = hashMapOf<String, Int> ()
         println(20/6)
         println(20%6)
 
+   // if kontrolleri
+        println("-------If Statements (Eger Kontrolleri)--------")
+        var score =0
+        if (score<10) {
+            println("Oyunu Kaybettin !")
+        } else if (score <=10 && score<20){
+            println("Skorun iyi Bele davam ele")
+        } else if(score >= 20 && score<30) {
+            println("Elasan Oyuna davam et,bacaracqsan")
+        } else if(score==30) {
+            println("Efsanesen !")
+        } else println("Rekord Qirirsan !")
+
+// When -Switch
+        println("-------When--------")
+        var notQiymeti = 3
+        var notMetni = ""
+        when (notQiymeti){
+            0 -> notMetni="kesildin"
+            1 -> notMetni="Kafi"
+            2 -> notMetni=" Pis "
+            3 -> notMetni="Qenaetbexsh"
+            4 -> notMetni="Yaxshi"
+            5 -> notMetni="Ela"
+        }
+             println(notMetni)
+
+         var yeniWhen=10
+         var yeniYazi= ""
+         when (yeniWhen) {
+             10 ->  yeniYazi = "Ela"
+             5  -> yeniYazi = "Orta"
+             0 -> yeniYazi = "Pis"
+}
+                  println(yeniYazi)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
-
 }
-
