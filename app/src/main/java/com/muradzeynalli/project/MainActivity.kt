@@ -151,8 +151,32 @@ val yemekKalorimap = hashMapOf<String, Int> ()
 }
                   println(yeniYazi)
 
+// Donguler
+        println("-------for--------")
+        var forUcun  = arrayOf(6,10,16,20,22,30)
+        var q = (forUcun.get(0)/2+5)
+        println("Dongu Basladi")
+     for (num in forUcun) {
+         println(num/2+3)
 
 
+     }
+
+        println("Dongu bitti")
+
+        val benimstringdizim = arrayListOf<String>()
+        benimstringdizim.add("Murad")
+        benimstringdizim.add("Zeynalli")
+        for (b in benimstringdizim ){
+            println(b)
+        }
+        // While
+        println("-------While--------")
+        var j = 1
+        while (j<=10) {
+            println(j)
+            j = j+1
+        }
 
 
 
